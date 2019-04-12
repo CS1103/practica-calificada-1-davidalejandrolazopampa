@@ -26,27 +26,29 @@ int main() {
     tll.push_back2(30);
     tll.push_back2(40);
     tll.push_back2(50);
-
+/*
     // Unir Listas y agregar valores a ambas listas
     assert(tll.getlist(1) == string("1 2 3 4 5 "));
     assert(tll.getlist(2) == string("0 10 20 30 40 50 "));
     assert(tll.getlist(0) == string());
 
     auto resul1t1 = tll.merge(66);
-    assert(result1 == string("Operación Exitosa"));
-
+    assert(resul1t1 == string("Operación Exitosa"));
 
     // Valores unidos
-    tll.pushback1(77);
-    tll.pushback2(88);
-    tll.pushback1(99);
+    tll.push_back1(77);
+    tll.push_back2(88);
+    tll.push_back1(99);
     auto result2 = tll.merge(100);
     assert(result2 == string("Operación duplicada"));
     assert(tll.getlist(0) == string("66 77 88 99 "));
-
+*/
     // Grabando Valores
     tll.save("output.txt");
-
+    tll.save("test.txt");
+    // Leer Valores ///////////////////////////////////////////OPCIONAL////////////////////
+    tll.load("output.txt");
+    tll.load("test.txt");
     // comparando archivos
     ifstream file1("test.txt");
     ifstream file2("output.txt");
